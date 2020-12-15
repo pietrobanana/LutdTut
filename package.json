@@ -1,0 +1,45 @@
+{
+  "name": "LutdTut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "test-server": "TEST_DATABASE=mytestdatabase npm start",
+    "test": "mocha --require @babel/register 'src/**/*.spec.js'",
+    "db-start": "pg_ctl -D /usr/local/var/postgres start",
+    "db-stop": "pg_ctl -D /usr/local/var/postgres stop"
+  },
+  "keywords": [],
+  "author": "Jorge> <jrg.ptrgvnn@gmail.com> (jpietro.space)",
+  "license": "LUTD",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "axios": "^0.18.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "@types/sequelize": "^4.28.9",
+    "apollo-server": "^2.19.0",
+    "apollo-server-express": "^2.19.0",
+    "bcrypt": "^5.0.0",
+    "cli": "^1.0.1",
+    "cors": "^2.8.5",
+    "dataloader": "^2.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^15.4.0",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-resolvers": "^0.4.2",
+    "heroku": "^7.47.5",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.5.1",
+    "sequelize": "^4.41.0",
+    "sequelize-cli": "^6.2.0",
+    "uuid": "^8.3.1"
+  }
+}
