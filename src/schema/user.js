@@ -26,3 +26,6 @@ export default gql`
     messages: [Message!]
   }
 `;
+
+//The me is an object type User which also consists of id, username, email, etc.
+  //These fields (id, username, email, etc.) are scalar types. These are defineds as STRINGS, BOOLEANS, INTS, etc.
